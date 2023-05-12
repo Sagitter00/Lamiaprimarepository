@@ -15,10 +15,10 @@
      typeof b,
      typeof c,
      typeof ogetto,
-     typeof array,
+     typeof array, 
      typeof data,
  )
- 
+
  const carrello={
      prodotti:[
          {
