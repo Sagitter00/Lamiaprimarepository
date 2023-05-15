@@ -50,4 +50,8 @@ const save = primaOperazionePromise(60).then((risultato) =>{
         (risultato2)=>{
         console.log("Fatto!")
     }
+    ).catch(
+        (errore) =>{
+            console.log("Errore", errore);
+        }
     )
