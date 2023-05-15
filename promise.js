@@ -16,7 +16,9 @@ function primaOperazione(input, genoveffa) {
   function primaOperazionePromise(input){
     const p = new Promise(
         (resolve,reject) =>{
-            primaOperazione(input, resolve)
+            primaOperazione(input, (output1) =>{
+                resolve(output1)
+            })
         }
     )
     return p;
@@ -25,7 +27,9 @@ function primaOperazione(input, genoveffa) {
   function secondaOperazionePromise(input){
     const p = new Promise(
         (resolve,reject) =>{
-            secondaOperazione(input, resolve)
+            secondaOperazione(input, (output2) =>{
+                resolve(output2)
+            })
         }
     )
     return p;
